@@ -1,11 +1,15 @@
-import Header from "./components/Header";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import Why from "./components/Why/Why";
 
 function App() {
-  return (
-    <div className=''>
-      <Header/>
-    </div>
-  );
+    return (
+        <div className='w-full'>
+            <Navbar />
+            <Home />
+            <Why />
+        </div>
+    )
 }
 
 export default App;
