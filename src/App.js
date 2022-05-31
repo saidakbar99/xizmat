@@ -4,7 +4,7 @@ import Why from "./components/Why/Why";
 
 function App() {
     return (
-        <div className='w-full'>
+        <div className='w-full container mx-auto'>
             <Navbar />
             <Home />
             <Why />
