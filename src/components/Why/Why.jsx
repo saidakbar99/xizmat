@@ -7,12 +7,14 @@ import why4 from '../../assets/why-4.svg'
 
 function Why() {
     return (
-        <div className='container max-w-[1140px] mx-auto text-center mt-32 px-20'>
-            <span className='text-4xl font-semibold text-gray-paragraph1'>Why You Should Choose AppLand</span>
-            <p className='w-1/2 mx-auto mt-5 text-gray-paragraph2'>
-                Alii nusquam cu duo, vim eu consulatu percipitur, meis dolor comprehensam at vis. Vel ut percipitur dignissim signiferumque.
-            </p>
-            <div className='flex w-full justify-between columns-4 md:columns-2 sm:columns-1'>
+        <div className='container max-w-[1140px] mx-auto lg:text-center my-32 px-2'>
+            <div className='text-center'>
+                <p className='text-[22px] font-semibold text-gray-paragraph1 lg:text-4xl'>Why You Should Choose AppLand</p>
+                <p className='my-5 text-gray-paragraph2'>
+                    Alii nusquam cu duo, vim eu consulatu percipitur, meis dolor comprehensam at vis. Vel ut percipitur dignissim signiferumque.
+                </p>
+            </div>
+            <div className='grid lg:grid-cols-4 md:grid-cols-2 '>
                 <WhyCard
                     img={why1}
                     title='Clean Design'

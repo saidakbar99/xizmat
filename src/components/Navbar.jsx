@@ -9,8 +9,8 @@ function Navbar() {
     }
 
     return(
-            <div className='container max-w-[1140px] mx-auto flex justify-between items-center px-20 h-24 relative'>
-                <span>LOGO</span>
+            <div className='container max-w-[1140px] mx-auto flex justify-between items-center px-4 lg:px-20 h-24 relative text-gray-paragraph1'>
+                <span className='text-5xl font-bold text-orange-600'>xizmat</span>
                 <ul className={`hidden font-semibold cursor-pointer lg:flex ${navMenu ? 'hidden' : ''}`}>
                     <li className='p-4 hover:text-main-blue'>Home</li>
                     <li className='p-4 hover:text-main-blue'>Why</li>
