@@ -23,14 +23,13 @@ function Navbar() {
             ${scrolled>=1 ? ' ease-in-out duration-500 bg-white py-[10px] shadow-md' : ''}
             `}
         >
-            <div className='container max-w-[1140px] mx-auto flex justify-between items-center px-4'>
+            <div className='max-w-[1140px] mx-auto flex justify-between items-center px-4'>
                 <span className='text-5xl font-bold text-orange-600'>xizmat</span>
                 <ul className={`hidden font-semibold cursor-pointer lg:flex ${navMenu ? 'hidden' : ''}`}>
                     <li className='px-4 hover:text-main-blue'>Home</li>
                     <li className='px-4 hover:text-main-blue'>Why</li>
                     <li className='px-4 hover:text-main-blue'>Features</li>
                     <li className='px-4 hover:text-main-blue'>Screenshots</li>
-                    <li className='px-4 hover:text-main-blue'>Pricing</li>
                     <li className='px-4 hover:text-main-blue'>Download</li>
                 </ul>
                 <div onClick={handleNav} className='cursor-pointer block lg:hidden'>
@@ -42,7 +41,6 @@ function Navbar() {
                         <li className='p-2 hover:text-main-blue'>Why</li>
                         <li className='p-2 hover:text-main-blue'>Features</li>
                         <li className='p-2 hover:text-main-blue'>Screenshots</li>
-                        <li className='p-2 hover:text-main-blue'>Pricing</li>
                         <li className='p-2 hover:text-main-blue'>Download</li>
                     </ul>
                 </div>

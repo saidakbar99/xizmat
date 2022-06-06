@@ -1,39 +1,60 @@
-// import {useState} from "react";
+import {useState} from "react";
 import Slider from "react-slick";
+import './slider.css'
 
-import slide1 from '../assets/Xizmat-black-T-shirt-white.png';
-import slide2 from '../assets/Xizmat-white-cap-color.png';
-import slide3 from '../assets/Xizmat-white-T-shirt-color.png';
+import { FaArrowRight, FaArrowLeft } from 'react-icons/fa'
+import slide1 from '../../assets/Xizmat-black-T-shirt-white.png';
+import slide2 from '../../assets/Xizmat-white-cap-color.png';
+import slide3 from '../../assets/Xizmat-white-T-shirt-color.png';
+
 
 const sliderImages = [slide1,slide2,slide3]
+
 function SliderCentered() {
+
+    const [imageIndex, setImageIndex] = useState(0)
+
+    const NextArrow = ({ onClick }) => {
+        return (
+            <div className="arrow next" onClick={onClick}>
+                <FaArrowRight />
+            </div>
+        )
+    }
+    const PrevArrow = ({ onClick }) => {
+        return (
+            <div className="arrow prev" onClick={onClick}>
+                <FaArrowLeft />
+            </div>
+        )
+    }
+
     const settings = {
         className: "center",
+        lazyLoad: true,
         centerMode: true,
         infinite: true,
-        centerPadding: "60px",
+        centerPadding: 0,
         slidesToShow: 3,
-        speed: 500
-    };
-    // const [currentSlide, setCurrentSlide] = useState(0)
-    //
-    // const changeSlide = (id) => {
-    //     setCurrentSlide(id)
-    // }
+        speed: 500,
+        nextArrow: <NextArrow />,
+        prevArrow: <PrevArrow />,
+        beforeChange: (current, next) => setImageIndex(next)
+    }
+
     return(
-        <div className='select-none relative container max-w-[1140px] mx-auto px-4'>
+        <div className='w-1/2 mx-auto h-[570px]'>
             <Slider {...settings}>
                 {
                     sliderImages.map((img, idx) => {
                         return(
-                            <div key={idx}>
+                            <div key={idx} className={`slide ${imageIndex === idx ? 'activeSlide' : ''}`}>
                                 <img src={img} alt={img}/>
                             </div>
                         )
                     })
                 }
             </Slider>
-
         </div>
     )
 }

@@ -5,7 +5,7 @@ import qrPlaymarket from "../assets/qr-code.png"
 function Download() {
     return(
         <div className="bg-features-bg">
-            <div className="container max-w-[1140px] mx-auto py-12 flex items-center">
+            <div className="max-w-[1140px] mx-auto py-12 flex items-center">
                 <div className="w-1/2">
                     <img className="w-2/3" src={Screenshot} alt="screenshot" />
                 </div>

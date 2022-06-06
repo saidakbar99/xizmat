@@ -4,7 +4,7 @@ import Spark from "../../assets/Xizmat-Spark.png"
 function WhySection2() {
     return(
         <div className=' bg-features-bg'>
-            <div className='container max-w-[1140px] mx-auto pb-32 px-4 pt-8 flex flex-wrap lg:flex-nowrap items-center'>
+            <div className='max-w-[1140px] mx-auto pb-32 px-4 pt-8 flex flex-wrap lg:flex-nowrap items-center'>
                 <img className='lg:w-1/2' src={Spark} alt="spark"/>
                 <div className='px-12 mt-32'>
                     <p className='text-2xl lg:text-4xl font-semibold text-gray-paragraph1'>Comes With All You Need.</p>

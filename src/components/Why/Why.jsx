@@ -10,7 +10,7 @@ import why4 from '../../assets/why-4.svg'
 function Why() {
     return (
         <div>
-            <div className='container max-w-[1140px] mx-auto lg:text-center my-32 px-2'>
+            <div className='max-w-[1140px] mx-auto lg:text-center my-32 px-2'>
                 <div className='text-center items-center'>
                     <p className='text-[22px] font-semibold text-gray-paragraph1 lg:text-4xl'>Why You Should Choose AppLand</p>
                     <p className='my-5 text-gray-paragraph2 lg:w-2/3 mx-auto'>

@@ -4,7 +4,8 @@ import Why from "./components/Why/Why";
 import Features from "./components/Features";
 import Footer from "./components/Footer";
 import Download from "./components/Download";
-// import SliderCentered from "./components/SliderCentered";
+// import SliderCentered from "./components/Slider/SliderCentered";
+import SliderMinimalistic from "./components/Slider/SliderMinimalistic";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
             <Why />
             <Features />
             {/* <SliderCentered /> */}
+            <SliderMinimalistic />
             <Download />
             <Footer />
         </div>
