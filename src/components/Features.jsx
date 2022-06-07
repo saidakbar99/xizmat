@@ -5,7 +5,7 @@ import why3 from '../assets/why-3.svg'
 
 function Features() {
     return(
-        <div className="max-w-[1140px] mx-auto py-12">
+        <div id="features" className="max-w-[1140px] mx-auto py-12">
             <div className="flex flex-col items-center text-center">
                 <h1 className="text-2xl lg:text-4xl text-gray-paragraph1 font-semibold">Awesome Key Features.</h1>
                 <p className="text-gray-paragraph1 mt-5 lg:w-2/3">Alii nusquam cu duo, vim eu consulatu percipitur, meis dolor comprehensam at vis. Vel ut percipitur dignissim signiferumque.</p>
@@ -34,7 +34,7 @@ function Features() {
                         </div>
                     </div>
                 </div>
-                <div className="w-1/2 px-4 items-center">
+                <div className="w-1/2 px-4 items-center lg:flex hidden">
                     <img className="w-2/3 mx-auto" src={Screenshot} alt="screenshot" />
                 </div>
             </div>

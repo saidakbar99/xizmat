@@ -1,23 +1,44 @@
+import { useState, useEffect } from "react";
+import HashLoader from "react-spinners/HashLoader";
+
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Why from "./components/Why/Why";
 import Features from "./components/Features";
 import Footer from "./components/Footer";
 import Download from "./components/Download";
-// import SliderCentered from "./components/Slider/SliderCentered";
-import SliderMinimalistic from "./components/Slider/SliderMinimalistic";
+import SliderMinimalistic from "./components/SliderMinimalistic";
 
 function App() {
+    const [loading, setLoading] = useState(false)
+
+    useEffect(() => {
+        setLoading(true)
+        setTimeout(() => {
+            setLoading(false)
+        }, 2000)
+    }, [])
+
     return (
         <div className='w-full'>
-            <Navbar />
-            <Home />
-            <Why />
-            <Features />
-            {/* <SliderCentered /> */}
-            <SliderMinimalistic />
-            <Download />
-            <Footer />
+        {
+            loading 
+            ?   <div className="w-full h-screen flex justify-center bg-white items-center">
+                    <HashLoader color={'#0898E7'} loading={loading} size={150} />
+                </div>
+
+            :   <div>
+                    <Navbar />
+                    
+                    <Home />
+                    <Why />
+                    <Features />
+                    {/* <SliderCentered /> */}
+                    <SliderMinimalistic />
+                    <Download />
+                    <Footer />
+                </div>
+        }
         </div>
     )
 }

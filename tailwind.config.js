@@ -18,7 +18,7 @@ module.exports = {
         fromLeft3: 'slideInFromLeft 1.7s ease-in-out 1',
         fromLeft4: 'slideInFromLeft 3s ease-in-out 1',
         ping2s: 'ping 2s ease-out infinite',
-        wiggle: 'wiggle 1s ease-in-out infinite'
+        // wiggle: 'wiggle 1s ease-in-out infinite'
       },
       keyframes: {
         slideInFromLeft : {
@@ -31,10 +31,10 @@ module.exports = {
             opacity: 100,
           },
         },
-        wiggle: {
-          '0%, 100%': { transform: 'rotate(-3deg)' },
-          '50%': { transform: 'rotate(3deg)' },
-        }
+        // wiggle: {
+        //   '0%, 100%': { transform: 'rotate(-3deg)' },
+        //   '50%': { transform: 'rotate(3deg)' },
+        // }
       },
     },
   },

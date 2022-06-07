@@ -5,7 +5,7 @@ import Button from "./Button";
 function Home() {
     
     return(
-        <div className='max-w-[1140px] mx-auto mb-32 pt-4 flex justify-between px-4 lg:pt-32'>
+        <div id='home' className='max-w-[1140px] mx-auto pb-32 pt-4 flex justify-between px-4 lg:pt-32'>
             <div className='lg:w-1/2'>
                 <p className='text-[22px] lg:text-4xl font-bold text-gray-700 mb-8 animate-fromLeft1'>
                     <span className='text-main-blue'>Launch Your App </span>
@@ -26,7 +26,7 @@ function Home() {
                     </a>
                 </div>
             </div>
-            <img className='animate-wiggle scale-x-110 hidden lg:flex' src={Person} alt="person"/>
+            <img className='hidden lg:flex' src={Person} alt="person"/>
         </div>
     )
 }
