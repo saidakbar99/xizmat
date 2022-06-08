@@ -1,13 +1,15 @@
+import { useTranslation  } from "react-i18next";
 import Screenshot from "../assets/screenshot.png"
 import why1 from '../assets/why-1.svg'
 import why2 from '../assets/why-2.svg'
 import why3 from '../assets/why-3.svg'
 
 function Features() {
+    const { t } = useTranslation()
     return(
-        <div id="features" className="max-w-[1140px] mx-auto py-12">
+        <div id="features" className="max-w-[1140px] mx-auto py-4 lg:py-12">
             <div className="flex flex-col items-center text-center">
-                <h1 className="text-2xl lg:text-4xl text-gray-paragraph1 font-semibold">Awesome Key Features.</h1>
+                <h1 className="text-2xl lg:text-4xl text-gray-paragraph1 font-semibold">{t('Awesome Key Features')}</h1>
                 <p className="text-gray-paragraph1 mt-5 lg:w-2/3">Alii nusquam cu duo, vim eu consulatu percipitur, meis dolor comprehensam at vis. Vel ut percipitur dignissim signiferumque.</p>
             </div>
             <div className="lg:flex items-center">

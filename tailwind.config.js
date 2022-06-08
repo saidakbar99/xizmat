@@ -12,6 +12,10 @@ module.exports = {
       boxShadow: {
         'custom': '0px 0px 10px 0px rgb(154 154 154 / 16%)',
       },
+      fontFamily: {
+        'ru': 'Raleway',
+        'uz': 'Poppins',
+      },
       animation: {
         fromLeft1: 'slideInFromLeft 1s ease-out 1',
         fromLeft2: 'slideInFromLeft 1.3s ease-out 1',
@@ -39,6 +43,6 @@ module.exports = {
     },
   },
   plugins: [
-
+    
   ],
 }

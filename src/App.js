@@ -33,7 +33,6 @@ function App() {
                     <Home />
                     <Why />
                     <Features />
-                    {/* <SliderCentered /> */}
                     <SliderMinimalistic />
                     <Download />
                     <Footer />

@@ -2,14 +2,27 @@ import { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { Link } from 'react-scroll'
 import ButtonToTop from "./ButtonToTop";
+import { useTranslation  } from "react-i18next";
+
+// import Dropdown from "./Dropdown";
 
 
 function Navbar() {
+
+    const { t, i18n } = useTranslation()
+
     const [navMenu, setNavMenu] = useState(false)
     const [scrolled, setScrolled] = useState(0)
 
+    const savedLng = localStorage.getItem("i18nextLng");
+
     const handleNav = () => {
         setNavMenu(!navMenu)
+    }
+
+    function setLanguage(lang) {
+        i18n.changeLanguage(lang)
+
     }
 
     useEffect(() => {
@@ -18,7 +31,6 @@ function Navbar() {
         window.addEventListener('scroll', onScroll, { passive: true });
         return () => window.removeEventListener('scroll', onScroll);
     }, [])
-
 
     return(
         <div
@@ -31,63 +43,78 @@ function Navbar() {
                 <Link to="home" offset={-70} className={`transition ease-in-out duration-500 ${scrolled < 1000 ? 'opacity-0' : 'opacity-100'}`}>
                     <ButtonToTop />
                 </Link>
-                <ul className={`hidden font-semibold cursor-pointer lg:flex ${navMenu ? 'hidden' : ''}`}>
+                <ul className={`hidden font-semibold cursor-pointer items-center lg:flex ${navMenu ? 'hidden' : ''}`}>
                     <li className='px-4 hover:text-main-blue'>
                         <Link activeClass="active" to={`${scrolled>=1 ? 'home' : ''}`} offset={-70} spy>
-                        Home
+                            {t('Home')}
                         </Link>
                     </li>
                     <li className='px-4 hover:text-main-blue'>
                         <Link activeClass="active" to="why" offset={-130} spy>
-                        Why
+                            {t('Why')}
                         </Link>
                     </li>
                     <li className='px-4 hover:text-main-blue'>
                         <Link activeClass="active" to="features" offset={-70} spy>
-                        Features
+                            {t('Features')}
                         </Link>
                     </li>
                     <li className='px-4 hover:text-main-blue'>
                         <Link activeClass="active" to="screenshots" offset={-130} spy>
-                        Screenshots
+                            {t('Screenshots')}
                         </Link>
                     </li>
                     <li className='px-4 hover:text-main-blue'>
                         <Link activeClass="active" to="download" offset={-70} spy>
-                        Download
+                            {t('Download')}
                         </Link>
                     </li>
+                    <li>
+                        {/* <Dropdown /> */}
+                    </li>
+                    <ul>
+                        <li onClick={() => setLanguage('ru')} className={`${savedLng === 'ru' ? 'underline' : 'no-underline'}`}>RU</li>
+                        <li onClick={() => setLanguage('uz')} className={`${savedLng === 'uz' ? 'underline' : 'no-underline'}`}>UZ</li>
+                    </ul>
                 </ul>
-                <div onClick={handleNav} className='cursor-pointer block lg:hidden'>
-                    { navMenu ? <AiOutlineClose size={30}/> : <AiOutlineMenu size={30} /> }
+                <div className="flex items-center lg:hidden">
+                    <div className="">
+                        <ul className="mr-4">
+                            <li onClick={() => setLanguage('ru')} className={`${savedLng === 'ru' ? 'underline' : 'no-underline'}`}>RU</li>
+                            <li onClick={() => setLanguage('uz')} className={`${savedLng === 'uz' ? 'underline' : 'no-underline'}`}>UZ</li>
+                        </ul>
+                    </div>
+                    <div onClick={handleNav} className='cursor-pointer'>
+                        { navMenu ? <AiOutlineClose size={30}/> : <AiOutlineMenu size={30} /> }
+                    </div>
                 </div>
                 <div className={`absolute left-0 z-10 bg-white w-full shadow-2xl ease-in-out transition-all duration-500 
                     ${navMenu ? scrolled>=1 ? 'top-[65px]' : 'top-[90px]' : 'top-[-2000px]'}
                 `}>
-                    <ul className='p-4 font-semibold text-2xl select-none'>
+                    <ul className='p-4 font-semibold text-2xl select-none cursor-pointer'>
                         <li className='p-4 hover:text-main-blue'>
                             <Link onClick={handleNav} activeClass="active" to={`${scrolled>=1 ? 'home' : ''}`} offset={-70} spy>
-                            Home
+                                {t('Home')}
                             </Link>
                         </li>
                         <li className='p-4 hover:text-main-blue'>
                             <Link onClick={handleNav} activeClass="active" to="why" offset={-70} spy>
-                            Why
+                                {t('Why')}
                             </Link>
                         </li>
                         <li className='p-4 hover:text-main-blue'>
                             <Link onClick={handleNav} activeClass="active" to="features" offset={-70} spy>
-                            Features
+                                {t('Features')}
                             </Link>
                         </li>
                         <li className='p-4 hover:text-main-blue'>
                             <Link onClick={handleNav} activeClass="active" to="screenshots" offset={-70} spy>
-                            Screenshots
+                                {t('Screenshots')}
                             </Link>
                         </li>
                         <li className='p-4 hover:text-main-blue'>
                             <Link onClick={handleNav} activeClass="active" to="download" offset={250} spy>
-                            Download
+                                {t('Download')}
                             </Link>
                         </li>
                     </ul>

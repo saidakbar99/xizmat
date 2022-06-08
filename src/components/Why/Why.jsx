@@ -4,15 +4,17 @@ import why1 from '../../assets/why-1.svg'
 import why2 from '../../assets/why-2.svg'
 import why3 from '../../assets/why-3.svg'
 import why4 from '../../assets/why-4.svg'
+import { useTranslation } from "react-i18next";
 
 
 
 function Why() {
+    const { t } = useTranslation()
     return (
         <div id="why">
-            <div className='max-w-[1140px] mx-auto lg:text-center my-16 py-16 px-2'>
+            <div className='max-w-[1140px] mx-auto lg:text-center py-8 lg:my-16 lg:py-16 px-2'>
                 <div className='text-center items-center'>
-                    <p className='text-[22px] font-semibold text-gray-paragraph1 lg:text-4xl'>Why You Should Choose AppLand</p>
+                    <p className='text-[22px] font-semibold text-gray-paragraph1 lg:text-4xl'>{t('Why You Should Choose Xizmat')}</p>
                     <p className='my-5 text-gray-paragraph2 lg:w-2/3 mx-auto'>
                         Alii nusquam cu duo, vim eu consulatu percipitur, meis dolor comprehensam at vis. Vel ut percipitur dignissim signiferumque.
                     </p>

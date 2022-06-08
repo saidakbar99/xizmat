@@ -1,11 +1,11 @@
 import playButton from '../assets/play-button.svg';
 import Person from '../assets/main-person.png';
-import Button from "./Button";
+import { useTranslation } from "react-i18next";
 
 function Home() {
-    
+    const { t } = useTranslation()
     return(
-        <div id='home' className='max-w-[1140px] mx-auto pb-32 pt-4 flex justify-between px-4 lg:pt-32'>
+        <div id='home' className='max-w-[1140px] mx-auto py-4 flex justify-between px-4 lg:py-32'>
             <div className='lg:w-1/2'>
                 <p className='text-[22px] lg:text-4xl font-bold text-gray-700 mb-8 animate-fromLeft1'>
                     <span className='text-main-blue'>Launch Your App </span>
@@ -15,7 +15,9 @@ function Home() {
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnon umy eirmomp or invidunt ut labore et dolore magna aliquyam eratse diam voluptua. At vero eosaccusam.
                 </p>
                 <div className='flex flex-nowrap animate-fromLeft3'>
-                    <Button title='Download Now'/>
+                <button className='bg-main-blue py-4 px-6 rounded text-white mr-12 transition duration-200 ease-out hover:ease-in hover:bg-light-blue'>
+                    {t('Download')}
+                </button>
                     <a href="https://www.youtube.com/watch?v=gIxcgrZvIO0" rel='noreferrer' target="_blank">
                         <button
                             className='bg-main-blue rounded-full p-4 relative animate-fromLeft4

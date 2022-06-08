@@ -1,8 +1,10 @@
 import Screenshot from "../assets/screenshot.png"
 import qrAppstore from "../assets/qr-code2.png"
 import qrPlaymarket from "../assets/qr-code.png"
+import { useTranslation } from 'react-i18next'
 
 function Download() {
+    const { t } = useTranslation()
     return(
         <div id="download" className="bg-features-bg">
             <div className="max-w-[1140px] mx-auto lg:pb-16 flex justify-center items-center">
@@ -10,7 +12,7 @@ function Download() {
                     <img className="w-2/3" src={Screenshot} alt="screenshot" />
                 </div>
                 <div className="lg:w-1/2 lg:text-center px-4">
-                    <h1 className="text-gray-paragraph1 text-[28px] mt-12 lg:mt-0 lg:text-[34px] font-semibold">Download and Start Using!</h1>
+                    <h1 className="text-gray-paragraph1 text-[28px] mt-12 lg:mt-0 lg:text-[34px] font-semibold">{t('Download and Start Using')}</h1>
                     <p className="text-gray-paragraph2 pt-4 pb-8">Alii nusquam cu duo, vim eu consulatu percipitur, meis doorcomprehen sam at vis. Vel ut dignissim signiferumq Alii nusquam cuduo, vim eusde consulatu percipitur, meis dolor comprehensam at vij. Alii nusquam cu duo, vim eu consulatu percipitur, meis doorcomprehen sam at vis. Vel ut dignissim signiferumq nusquam.</p>
                     <div className="flex flex-col">
                         <div className="flex flex-col lg:flex-row">
@@ -28,9 +30,9 @@ function Download() {
                                         </div>
                                     </div>
                                 </a>
-                                <img className="w-[155px] h-[155px] mx-auto mt-8" src={qrAppstore} alt="qr1" />
+                                <img className="w-[155px] h-[155px] mx-auto mt-8 hidden lg:block" src={qrAppstore} alt="qr1" />
                             </div>
-                            <div className="mt-24 lg:mt-0 mx-auto">
+                            <div className="mx-auto">
                                 <a href="https://play.google.com/store/apps?hl=ru">
                                     <div className="flex my-3 w-48 h-14 bg-black text-white rounded items-center justify-center">
                                         <div className="mr-3">
@@ -47,7 +49,7 @@ function Download() {
                                         </div>
                                     </div>
                                 </a>
-                                <img className="w-[155px] h-[155px] mx-auto mt-8" src={qrPlaymarket} alt="qr2" />
+                                <img className="w-[155px] h-[155px] mx-auto mt-8 hidden lg:block" src={qrPlaymarket} alt="qr2" />
                             </div>
                         </div>
                         <div className="flex mt-4">
