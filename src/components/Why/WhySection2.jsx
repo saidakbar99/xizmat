@@ -13,7 +13,9 @@ function WhySection2() {
                         Alii nusquam cu duo, vim eu consulatu percipitur, meis doorcomprehen sam at vis. Vel ut dignissim signiferumq Alii nusquam cuduo, vim eusde consulatu percipitur, meis dolor comprehensam at vij. Alii nusquam cu duo, vim eu consulatu percipitur, meis doorcomprehen sam at vis. Vel ut dignissim signiferumq nusquam.
                     </p>
                     <button className='bg-main-blue py-4 px-6 rounded text-white mr-12 transition duration-200 ease-out hover:ease-in hover:bg-light-blue'>
-                        {t('Download Now')}
+                        <p className="w-32">
+                            {t('Download Now')}
+                        </p>
                     </button>
                 </div>
             </div>

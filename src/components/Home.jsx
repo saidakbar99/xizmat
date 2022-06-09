@@ -16,7 +16,9 @@ function Home() {
                 </p>
                 <div className='flex flex-nowrap animate-fromLeft3'>
                 <button className='bg-main-blue py-4 px-6 rounded text-white mr-12 transition duration-200 ease-out hover:ease-in hover:bg-light-blue'>
-                    {t('Download')}
+                    <p className='w-16'>
+                        {t('Download')}
+                    </p>
                 </button>
                     <a href="https://www.youtube.com/watch?v=gIxcgrZvIO0" rel='noreferrer' target="_blank">
                         <button

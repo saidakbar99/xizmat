@@ -4,26 +4,22 @@ import { Link } from 'react-scroll'
 import ButtonToTop from "./ButtonToTop";
 import { useTranslation  } from "react-i18next";
 
-// import Dropdown from "./Dropdown";
+import Dropdown from "./Dropdown";
 
 
 function Navbar() {
 
-    const { t, i18n } = useTranslation()
+    const { t } = useTranslation()
 
     const [navMenu, setNavMenu] = useState(false)
     const [scrolled, setScrolled] = useState(0)
 
-    const savedLng = localStorage.getItem("i18nextLng");
 
     const handleNav = () => {
         setNavMenu(!navMenu)
     }
 
-    function setLanguage(lang) {
-        i18n.changeLanguage(lang)
-
-    }
+    
 
     useEffect(() => {
         const onScroll = () => setScrolled(window.pageYOffset)
@@ -70,19 +66,12 @@ function Navbar() {
                         </Link>
                     </li>
                     <li>
-                        {/* <Dropdown /> */}
+                        <Dropdown />
                     </li>
-                    <ul>
-                        <li onClick={() => setLanguage('ru')} className={`${savedLng === 'ru' ? 'underline' : 'no-underline'}`}>RU</li>
-                        <li onClick={() => setLanguage('uz')} className={`${savedLng === 'uz' ? 'underline' : 'no-underline'}`}>UZ</li>
-                    </ul>
+                    
                 </ul>
                 <div className="flex items-center lg:hidden">
                     <div className="">
-                        <ul className="mr-4">
-                            <li onClick={() => setLanguage('ru')} className={`${savedLng === 'ru' ? 'underline' : 'no-underline'}`}>RU</li>
-                            <li onClick={() => setLanguage('uz')} className={`${savedLng === 'uz' ? 'underline' : 'no-underline'}`}>UZ</li>
-                        </ul>
                     </div>
                     <div onClick={handleNav} className='cursor-pointer'>
                         { navMenu ? <AiOutlineClose size={30}/> : <AiOutlineMenu size={30} /> }
@@ -116,6 +105,9 @@ function Navbar() {
                             <Link onClick={handleNav} activeClass="active" to="download" offset={250} spy>
                                 {t('Download')}
                             </Link>
+                        </li>
+                        <li className='p-2 hover:text-main-blue' onClick={handleNav}>
+                            <Dropdown />
                         </li>
                     </ul>
                 </div>
