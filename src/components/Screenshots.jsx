@@ -20,7 +20,7 @@ function SliderMinimalistic() {
      return (
        <div id='screenshots' className="my-4 text-center lg:pb-32 lg:mt-16">
          <h2 className='text-2xl lg:text-4xl text-gray-paragraph1 font-semibold'>{t('App Screenshots')}</h2>
-         <p className='text-gray-paragraph1 px-4 mt-5 lg:w-1/3 mx-auto'>Alii nusquam cu duo, vim eu consulatu percipitur, meis dolor comprehensam at vis. Vel ut percipitur dignissim signiferumque.</p>
+         {/* <p className='text-gray-paragraph1 px-4 mt-5 lg:w-1/3 mx-auto'>Alii nusquam cu duo, vim eu consulatu percipitur, meis dolor comprehensam at vis. Vel ut percipitur dignissim signiferumque.</p> */}
            <div className='px-4'>
              <Carousel
                data={data}

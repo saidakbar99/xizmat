@@ -8,11 +8,10 @@ function Home() {
         <div id='home' className='max-w-[1140px] mx-auto py-4 flex justify-between px-4 lg:py-32'>
             <div className='lg:w-1/2'>
                 <p className='text-[22px] lg:text-4xl font-bold text-gray-700 mb-8 animate-fromLeft1'>
-                    <span className='text-main-blue'>Launch Your App </span>
-                    With Confidence and Creativity.
+                    {t('Hero')}
                 </p>
-                <p className='transition delay-300 text-gray-500 mb-8 font-thin animate-fromLeft2 '>
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diamnon umy eirmomp or invidunt ut labore et dolore magna aliquyam eratse diam voluptua. At vero eosaccusam.
+                <p className='transition delay-300 text-gray-500 mb-8 font-semibold animate-fromLeft2 text-xl'>
+                    {t('Hero-sub')}
                 </p>
                 <div className='flex flex-nowrap animate-fromLeft3'>
                 <button className='bg-main-blue py-4 px-6 rounded text-white mr-12 transition duration-200 ease-out hover:ease-in hover:bg-light-blue'>

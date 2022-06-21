@@ -10,7 +10,7 @@ function Features() {
         <div id="features" className="max-w-[1140px] mx-auto py-4 lg:py-12">
             <div className="flex flex-col items-center text-center">
                 <h1 className="text-2xl lg:text-4xl text-gray-paragraph1 font-semibold">{t('Awesome Key Features')}</h1>
-                <p className="text-gray-paragraph1 mt-5 lg:w-2/3">Alii nusquam cu duo, vim eu consulatu percipitur, meis dolor comprehensam at vis. Vel ut percipitur dignissim signiferumque.</p>
+                {/* <p className="text-gray-paragraph1 mt-5 lg:w-2/3">Alii nusquam cu duo, vim eu consulatu percipitur, meis dolor comprehensam at vis. Vel ut percipitur dignissim signiferumque.</p> */}
             </div>
             <div className="lg:flex items-center">
                 <div className="lg:w-1/2 flex flex-col px-4">

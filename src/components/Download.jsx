@@ -13,7 +13,7 @@ function Download() {
                 </div>
                 <div className="lg:w-1/2 lg:text-center px-4">
                     <h1 className="text-gray-paragraph1 text-[28px] mt-12 lg:mt-0 lg:text-[34px] font-semibold">{t('Download and Start Using')}</h1>
-                    <p className="text-gray-paragraph2 pt-4 pb-8">Alii nusquam cu duo, vim eu consulatu percipitur, meis doorcomprehen sam at vis. Vel ut dignissim signiferumq Alii nusquam cuduo, vim eusde consulatu percipitur, meis dolor comprehensam at vij. Alii nusquam cu duo, vim eu consulatu percipitur, meis doorcomprehen sam at vis. Vel ut dignissim signiferumq nusquam.</p>
+                    {/* <p className="text-gray-paragraph2 pt-4 pb-8">Alii nusquam cu duo, vim eu consulatu percipitur, meis doorcomprehen sam at vis. Vel ut dignissim signiferumq Alii nusquam cuduo, vim eusde consulatu percipitur, meis dolor comprehensam at vij. Alii nusquam cu duo, vim eu consulatu percipitur, meis doorcomprehen sam at vis. Vel ut dignissim signiferumq nusquam.</p> */}
                     <div className="flex flex-col">
                         <div className="flex flex-col lg:flex-row">
                             <div className="lg:mr-12 mx-auto">

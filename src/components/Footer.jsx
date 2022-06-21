@@ -1,4 +1,10 @@
+import { useEffect } from 'react'
+
 function Footer() {
+    useEffect(() => {
+        const fn = () => console.log('move')
+        window.addEventListener('mousemove', fn)
+    }, [])
     return(
         <div className='max-w-[1140px] mx-auto px-4 py-8 text-gray-paragraph2'>
             <div className='flex justify-around flex-wrap w-full'>
@@ -6,8 +12,8 @@ function Footer() {
                     <div className='text-center lg:text-left'>
                         <span className='text-5xl font-bold text-orange-600'>xizmat</span>
                     </div>
-                    <p className='pt-6'>
-                        Lorem ipsum dolor sit amet consetetur sadipscing elitr, sederfs diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.
+                    <p className='pt-6 text-2xl'>
+                        Xizmat bilan oson
                     </p>
                 </div>
                     <div className='px-4 mt-8'>

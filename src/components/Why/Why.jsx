@@ -14,31 +14,27 @@ function Why() {
         <div id="why">
             <div className='max-w-[1140px] mx-auto lg:text-center py-8 lg:my-16 lg:py-16 px-2'>
                 <div className='text-center items-center'>
-                    <p className='text-[22px] font-semibold text-gray-paragraph1 lg:text-4xl'>{t('Why You Should Choose Xizmat')}</p>
-                    <p className='my-5 text-gray-paragraph2 lg:w-2/3 mx-auto'>
+                    <p className='text-[22px] font-semibold text-gray-paragraph1 lg:text-4xl'>{t('How to start')}</p>
+                    {/* <p className='my-5 text-gray-paragraph2 lg:w-2/3 mx-auto'>
                         Alii nusquam cu duo, vim eu consulatu percipitur, meis dolor comprehensam at vis. Vel ut percipitur dignissim signiferumque.
-                    </p>
+                    </p> */}
                 </div>
                 <div className='grid lg:grid-cols-4 md:grid-cols-2 '>
                     <WhyCard
                         img={why1}
-                        title='Clean Design'
-                        description='Lorem ipsum dolor sitam etco snsetetur sadipscing elitr sed diam nonumy.'
+                        title={t('How.step1')}
                     />
                     <WhyCard
                         img={why2}
-                        title='Easy to Use'
-                        description='Lorem ipsum dolor sitam etco snsetetur sadipscing elitr sed diam nonumy.'
+                        title={t('How.step2')}
                     />
                     <WhyCard
                         img={why3}
-                        title='Fast Loading'
-                        description='Lorem ipsum dolor sitam etco snsetetur sadipscing elitr sed diam nonumy.'
+                        title={t('How.step3')}
                     />
                     <WhyCard
                         img={why4}
-                        title='All Elements'
-                        description='Lorem ipsum dolor sitam etco snsetetur sadipscing elitr sed diam nonumy.'
+                        title={t('How.step4')}
                     />
                 </div>
             </div>

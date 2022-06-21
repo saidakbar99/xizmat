@@ -4,11 +4,18 @@
     "Features":"Imkoniyatlar",
     "Screenshots":"Rasmlar",
     "Download":"Yuklash",
-    "Launch Your App With Confidence and Creativity":"Launch Your App With Confidence and Creativity",
+    "Hero": "Har ishga mutaxassis bor",
+    "Hero-sub": "Mutaxassisni esa XIZMAT sizga topib beradi",
     "Download Now":"Yuklab olish",
-    "Why You Should Choose Xizmat":"Nega Xizmatni tanlashingiz kerak",
+    "How to start":"Mutaxassis topish OSON",
+    "How": {
+        "step1":"Ilovani yuklang",
+        "step2":"Ro'yhatdan oting",
+        "step3":"Buyurtma qiling",
+        "step4":"Mutaxassisni tanlang"
+    },
     "Comes With All You Need":"Sizga kerak bo'lgan hamma narsa bor",
-    "Awesome Key Features":"Ajoyib imkoniyatlar",
+    "Awesome Key Features":"Asosiy imkoniyatlar",
     "App Screenshots":"Ilovaning rasmlari",
     "Download and Start Using":"Yuklab oling va ishlatishni boshlang",
     "Language": "O`zbekcha"

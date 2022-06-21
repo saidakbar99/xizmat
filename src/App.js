@@ -7,7 +7,7 @@ import Why from "./components/Why/Why";
 import Features from "./components/Features";
 import Footer from "./components/Footer";
 import Download from "./components/Download";
-import SliderMinimalistic from "./components/SliderMinimalistic";
+import Screenshots from "./components/Screenshots";
 
 function App() {
     const [loading, setLoading] = useState(false)
@@ -24,7 +24,7 @@ function App() {
         {
             loading 
             ?   <div className="w-full h-screen flex justify-center bg-white items-center">
-                    <HashLoader color={'#0898E7'} loading={loading} size={150} />
+                    <HashLoader color={'#CC694F'} loading={loading} size={150} />
                 </div>
 
             :   <div>
@@ -33,7 +33,7 @@ function App() {
                     <Home />
                     <Why />
                     <Features />
-                    <SliderMinimalistic />
+                    <Screenshots />
                     <Download />
                     <Footer />
                 </div>

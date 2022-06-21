@@ -14,18 +14,17 @@ function Navbar() {
     const [navMenu, setNavMenu] = useState(false)
     const [scrolled, setScrolled] = useState(0)
 
-
     const handleNav = () => {
-        setNavMenu(!navMenu)
+        setNavMenu(prevState => !prevState)
     }
-
     
-
-    useEffect(() => {
+    useEffect(( ) => {
         const onScroll = () => setScrolled(window.pageYOffset)
         window.removeEventListener('scroll', onScroll);
         window.addEventListener('scroll', onScroll, { passive: true });
-        return () => window.removeEventListener('scroll', onScroll);
+        return () => {
+            window.removeEventListener('scroll', onScroll);
+        }
     }, [])
 
     return(

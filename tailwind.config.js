@@ -3,8 +3,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'main-blue': '#0898E7',
-        'light-blue': '#4DB5EE',
+        'main-blue': '#CC694F',
+        'light-blue': '#EA580C',
         'gray-paragraph1': '#38424D',
         'gray-paragraph2': '#747E88',
         'features-bg': '#F1FBFD',
