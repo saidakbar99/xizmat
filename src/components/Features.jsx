@@ -17,22 +17,22 @@ function Features() {
                     <div className='flex items-center p-8 mt-8 shadow-custom ease-in-out hover:shadow-lg duration-300 cursor-pointer'>
                         <img className="w-16" src={why1} alt="test" />
                         <div className="pl-6">
-                            <h3 className='text-[25px] text-gray-paragraph1 font-medium'>Fully Responsive</h3>
-                            <p className="text-gray-paragraph2">Lorem ipsum dolor sit ametco snsetetur sadipscing elitr sed diam nonumy eirmod.</p>
+                            <h3 className='text-[25px] text-gray-paragraph1 font-medium'>{t('FeaturesCard.feature1')}</h3>
+                            <p className="text-gray-paragraph2">{t('FeaturesCard.feature1-sub')}</p>
                         </div>
                     </div>
                     <div className='flex items-center p-8 mt-8 shadow-custom ease-in-out hover:shadow-lg duration-300 cursor-pointer'>
                         <img className="w-16" src={why2} alt="test" />
                         <div className="pl-6">
-                            <h3 className='text-[25px] text-gray-paragraph1 font-medium'>Refreshing Design</h3>
-                            <p className="text-gray-paragraph2">Lorem ipsum dolor sit ametco snsetetur sadipscing elitr sed diam nonumy eirmod.</p>
+                            <h3 className='text-[25px] text-gray-paragraph1 font-medium'>{t('FeaturesCard.feature2')}</h3>
+                            <p className="text-gray-paragraph2">{t('FeaturesCard.feature2-sub')}</p>
                         </div>
                     </div>
                     <div className='flex items-center p-8 mt-8 shadow-custom ease-in-out hover:shadow-lg duration-300 cursor-pointer'>
                         <img className="w-16" src={why3} alt="test" />
                         <div className="pl-6">
-                            <h3 className='text-[25px] text-gray-paragraph1 font-medium'>Bootstrap 5</h3>
-                            <p className="text-gray-paragraph2">Lorem ipsum dolor sit ametco snsetetur sadipscing elitr sed diam nonumy eirmod.</p>
+                            <h3 className='text-[25px] text-gray-paragraph1 font-medium'>{t('FeaturesCard.feature3')}</h3>
+                            <p className="text-gray-paragraph2">{t('FeaturesCard.feature3-sub')}</p>
                         </div>
                     </div>
                 </div>

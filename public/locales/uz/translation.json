@@ -5,7 +5,7 @@
     "Screenshots":"Rasmlar",
     "Download":"Yuklash",
     "Hero": "Har ishga mutaxassis bor",
-    "Hero-sub": "Mutaxassisni esa XIZMAT sizga topib beradi",
+    "Hero-sub": "Mutaxassisni esa XIZMAT sizga topib beradi. Bizning inovatision ilova Sizning talablaringizga binoan kerakli mutaxassislarni topishingizda yordam beradi",
     "Download Now":"Yuklab olish",
     "How to start":"Mutaxassis topish OSON",
     "How": {
@@ -18,5 +18,22 @@
     "Awesome Key Features":"Asosiy imkoniyatlar",
     "App Screenshots":"Ilovaning rasmlari",
     "Download and Start Using":"Yuklab oling va ishlatishni boshlang",
-    "Language": "O`zbekcha"
+    "Language": "O`zbekcha",
+    "forClients": "Klientlar uchun",
+    "forPerformer": "Ishchilar uchun",
+    "FAQ": "Savollar",
+    "Instruction": "Qo'llanma",
+    "howStart": "Boshlash",
+    "Rates": "Narxlar",
+    "Footer-sub": "Xizmat ilovasi orqali qoygan maqsadlaringizga tezroq erishing",
+    "present": "Sovg'a",
+    "Contacts": "Bog'lanish",
+    "FeaturesCard": {
+        "feature1":"Oson ishlatish",
+        "feature1-sub":"Bizning ilovani ishlatish juda ham oson bolib, ko'rganni o'zida chunarli bo'ladi",
+        "feature2":"Pul ishlashni boshlang",
+        "feature2-sub":"Ilova orqali pul ketqizmay ishlashni boshla olasiz",
+        "feature3":"Bepul",
+        "feature3-sub":"Bizning ilova mutlaqo bepul"
+    }
 }
